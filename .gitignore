@@ -1,1 +1,4 @@
 vendor/
+
+# Drupal generated files (never commit)
+web/sites/default/files/
