@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
   header, footer {
     background: #f4f6f8;
     padding: 1rem;
@@ -331,3 +331,39 @@ body {
       padding: 1rem;
     }
   }
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px 24px;
+  }
+  
+  #block-food-rescue-sitebranding {
+    order: 1;
+    flex: 0 0 auto;
+  }
+  
+  #block-food-rescue-main-menu {
+    order: 2;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #block-food-rescue-main-menu ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #block-food-rescue-sitebranding img {
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  
