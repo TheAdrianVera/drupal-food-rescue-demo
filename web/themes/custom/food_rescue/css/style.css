@@ -45,18 +45,21 @@ body {
   }
   
   /* Site Branding */
-  #block-food-rescue-site-branding {
+  #block-food-rescue-site-branding,
+  #block-food-rescue-sitebranding {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
   
-  #block-food-rescue-site-branding img {
+  #block-food-rescue-site-branding img,
+  #block-food-rescue-sitebranding img {
     height: 50px;
     width: auto;
   }
   
-  #block-food-rescue-site-branding a {
+  #block-food-rescue-site-branding a,
+  #block-food-rescue-sitebranding a {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -349,6 +352,7 @@ header > div {
     order: 2;
     flex: 1 1 auto;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
   }
   
