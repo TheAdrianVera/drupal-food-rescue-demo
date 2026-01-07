@@ -1,0 +1,22 @@
+uuid: 924812aa-c96b-4b48-8ad2-ec02495a04cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - food_rescue
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: food_rescue_help
+theme: food_rescue
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

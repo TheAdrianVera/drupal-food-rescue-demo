@@ -1,0 +1,48 @@
+uuid: 4d9d8a4e-c8b2-4002-a9f0-d4f22c4eff88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_neighborhood
+field_name: field_neighborhood
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: west_loop
+      label: 'West Loop'
+    -
+      value: wrigleyville
+      label: Wrigleyville
+    -
+      value: lakeview
+      label: Lakeview
+    -
+      value: logan_square
+      label: 'Logan Square'
+    -
+      value: pilsen
+      label: Pilsen
+    -
+      value: north_center
+      label: 'North Center'
+    -
+      value: hermosa
+      label: Hermosa
+    -
+      value: south_loop
+      label: 'River North'
+    -
+      value: china_town
+      label: Bridgeport
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

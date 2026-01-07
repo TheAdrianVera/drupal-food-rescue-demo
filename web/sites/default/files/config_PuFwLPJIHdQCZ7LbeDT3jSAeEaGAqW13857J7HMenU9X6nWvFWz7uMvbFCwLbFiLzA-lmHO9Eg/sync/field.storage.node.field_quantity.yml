@@ -1,0 +1,33 @@
+uuid: 559844ce-eeb5-48a8-a344-850a61691b33
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_quantity
+field_name: field_quantity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: trunks_worth
+      label: 'Small Amount'
+    -
+      value: small_sedan_of_food
+      label: 'Medium Amount'
+    -
+      value: large_amount
+      label: 'Large Amount'
+    -
+      value: extra_large_amount
+      label: 'Extra Large Amount'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

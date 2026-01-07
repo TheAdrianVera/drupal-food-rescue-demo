@@ -1,0 +1,18 @@
+uuid: 6cf8191e-8051-4c35-b492-a98597c82e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.food_listing
+id: node.food_listing.title
+field_name: title
+entity_type: node
+bundle: food_listing
+label: 'Food Item'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

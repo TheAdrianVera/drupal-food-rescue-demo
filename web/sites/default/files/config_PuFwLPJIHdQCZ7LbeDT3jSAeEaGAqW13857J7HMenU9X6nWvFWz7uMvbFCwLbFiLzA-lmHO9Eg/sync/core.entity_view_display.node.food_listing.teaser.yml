@@ -1,0 +1,75 @@
+uuid: a0e0cbff-141f-430a-81b0-f3b440b42d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_listing.field_contact_email
+    - field.field.node.food_listing.field_location
+    - field.field.node.food_listing.field_neighborhood
+    - field.field.node.food_listing.field_photo
+    - field.field.node.food_listing.field_pickup_window_end
+    - field.field.node.food_listing.field_pickup_window_start
+    - field.field.node.food_listing.field_quantity
+    - field.field.node.food_listing.field_status
+    - node.type.food_listing
+  module:
+    - datetime
+    - image
+    - options
+    - user
+id: node.food_listing.teaser
+targetEntityType: node
+bundle: food_listing
+mode: teaser
+content:
+  field_neighborhood:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pickup_window_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_quantity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_contact_email: true
+  field_location: true
+  field_pickup_window_end: true

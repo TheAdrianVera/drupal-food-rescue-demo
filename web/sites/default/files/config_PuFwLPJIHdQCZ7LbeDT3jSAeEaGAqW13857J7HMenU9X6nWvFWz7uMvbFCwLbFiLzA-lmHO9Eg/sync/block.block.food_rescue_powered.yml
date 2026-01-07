@@ -1,0 +1,22 @@
+uuid: 8679ef28-971d-49b9-8dcf-d335ca914e16
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - food_rescue
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: food_rescue_powered
+theme: food_rescue
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

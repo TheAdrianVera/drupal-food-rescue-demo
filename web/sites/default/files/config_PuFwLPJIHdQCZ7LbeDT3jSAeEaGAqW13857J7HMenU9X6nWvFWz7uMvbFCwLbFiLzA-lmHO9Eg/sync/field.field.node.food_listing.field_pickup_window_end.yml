@@ -1,0 +1,21 @@
+uuid: 58791e92-470b-4b2a-a7ed-88e7f4aef447
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pickup_window_end
+    - node.type.food_listing
+  module:
+    - datetime
+id: node.food_listing.field_pickup_window_end
+field_name: field_pickup_window_end
+entity_type: node
+bundle: food_listing
+label: 'PickUp Window (END)'
+description: 'End of acceptable time to rescue food.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

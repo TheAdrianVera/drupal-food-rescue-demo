@@ -1,0 +1,22 @@
+uuid: 820b9d5e-8906-4df2-8c57-9be596fcf978
+langcode: en
+status: true
+dependencies:
+  theme:
+    - food_rescue
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: food_rescue_primary_local_tasks
+theme: food_rescue
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: e0096efd-0020-4371-81df-37fe3b79fec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_email
+    - node.type.food_listing
+id: node.food_listing.field_contact_email
+field_name: field_contact_email
+entity_type: node
+bundle: food_listing
+label: 'Contact Email'
+description: "Primary contact's emails for rescue."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

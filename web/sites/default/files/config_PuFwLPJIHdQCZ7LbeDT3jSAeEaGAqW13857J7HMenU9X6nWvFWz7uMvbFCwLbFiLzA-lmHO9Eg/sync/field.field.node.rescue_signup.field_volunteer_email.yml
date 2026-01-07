@@ -1,0 +1,19 @@
+uuid: a14e21d9-7558-41be-83e6-2ca9bf17f94c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volunteer_email
+    - node.type.rescue_signup
+id: node.rescue_signup.field_volunteer_email
+field_name: field_volunteer_email
+entity_type: node
+bundle: rescue_signup
+label: 'Volunteer Email'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

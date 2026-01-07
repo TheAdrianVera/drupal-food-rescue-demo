@@ -1,0 +1,18 @@
+uuid: 51fd08fb-ca0a-4f70-984e-2ac88ecccfcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rescue_signup
+id: node.rescue_signup.title
+field_name: title
+entity_type: node
+bundle: rescue_signup
+label: 'Volunteer Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
