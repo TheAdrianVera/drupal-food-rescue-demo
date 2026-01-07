@@ -8,6 +8,7 @@ services:
     depends_on:
       - db
     volumes:
+      - ./:/var/www/html
       - ./web/sites/default/files:/var/www/html/web/sites/default/files
     restart: unless-stopped
 

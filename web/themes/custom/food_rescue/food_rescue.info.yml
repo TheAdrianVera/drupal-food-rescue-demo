@@ -1,0 +1,11 @@
+name: Food Rescue
+type: theme
+description: Custom theme for Food Rescue Hub demo
+core_version_requirement: ^11
+base theme: stable9
+libraries:
+  - food_rescue/global
+regions:
+  header: Header
+  content: Content
+  footer: Footer

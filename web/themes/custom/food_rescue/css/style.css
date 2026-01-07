@@ -1,0 +1,18 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background: #f4f6f8;
+    padding: 1rem;
+  }
+  
+  a {
+    color: #005ea2;
+  }
+  
+  a:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+  }
