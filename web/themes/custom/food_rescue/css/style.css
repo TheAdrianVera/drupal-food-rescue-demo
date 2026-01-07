@@ -153,15 +153,24 @@ body {
   }
   
   /* Food Cards Grid */
+  /*
+    Drupal Views "Grid" output is typically:
+    .views-view-grid > .views-row > .views-col (with inline widths).
+    We apply CSS Grid to the row so it can responsively reflow.
+  */
   .views-view-grid {
+    margin: 2rem 0;
+  }
+
+  .views-view-grid > .views-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin: 2rem 0;
   }
-  
-  .views-col {
-    width: 100% !important;
+
+  /* Override inline width: 25% etc so the CSS grid can control sizing */
+  .views-view-grid .views-col {
+    width: auto !important;
   }
   
   /* Article Cards */
@@ -179,9 +188,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
+  /* Ensure all images are perfect squares - override inline width/height attributes */
   article img {
-    width: 100%;
-    height: 200px;
+    width: 100% !important;
+    max-width: 500px;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
     object-fit: cover;
     display: block;
   }
@@ -248,14 +260,43 @@ body {
   
   /* Read More Link */
   article .links {
-    padding: 1rem;
+    /* Match the left padding of the other field rows (they use 1rem) */
+    padding: 0.75rem 1rem;
     margin: 0;
     border-top: 1px solid #f0f0f0;
+    list-style: none;
+  }
+  
+  article .links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   article .links a {
     font-weight: 600;
     text-decoration: none;
+  }
+  
+  /* Remove bullets from all links lists */
+  .links,
+  .links.inline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  /* But inside our cards we *do* want that left padding */
+  article ul.links,
+  article ul.links.inline {
+    padding-left: 1rem;
+  }
+  
+  .links li,
+  .links.inline li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   /* Powered by Drupal */
@@ -282,7 +323,7 @@ body {
       width: 100%;
     }
     
-    .views-view-grid {
+    .views-view-grid > .views-row {
       grid-template-columns: 1fr;
     }
     
